@@ -1,0 +1,74 @@
+{
+  "name": "🥷ѕᴏʀᴄᴇ ᴀᴍʙʀᴏ🥷",
+  "description": "يوزر بوت ѕᴏʀᴄᴇ ᴀᴍʙʀᴏ بلاك مبني على اخر اصدار باثيون وتليثيون ",
+  "logo": "https://telegra.ph/file/fbbcdd13ed2c6b6f4d5de.jpg",
+  "keywords": [
+    "telegram",
+    "ambro",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/asaaqa/Zaza-Ambro",
+  "telegram": "https://t.me/Mlze1bot",
+  "success_url": "https://t.me/Mlze1bot",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "حط هنا الايبي إيد API_ID ",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "حط هنا الايبي هاش",
+      "required": true
+    },
+     "STRING_SESSION": {
+      "description": "حط هنا جلسة تليثيون",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "حط هنا اول مربع الي هو اسم التطبيق",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "حط هنا الايبي كي تبع هيريكو  'https://dashboard.heroku.com/account'",
+      "value": "Check Di Heroku Dashboard Mu",
+      "required": true
+    },
+    "PM_AUTO_BAN": {
+      "description": "لا تغير بيها",
+      "value": "True",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],"buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-redis"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+  }, {
+    "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab"
+  },{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "https://github.com/amivin/aria2-heroku"
+  }, {
+    "url": "https://github.com/stevo550/buildpack-slug-cleaner"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
