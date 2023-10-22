@@ -1,4 +1,4 @@
-from . import *
+from .. import *
 
 
 @joo_cmd(pattern="اوامر")
