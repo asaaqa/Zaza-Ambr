@@ -32,7 +32,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "حط هنا الايبي كي تبع هيريكو  'https://dashboard.heroku.com/account'",
-      "value": "Check Di Heroku Dashboard Mu",
+      "value": "",
       "required": true
     },
     "PM_AUTO_BAN": {
