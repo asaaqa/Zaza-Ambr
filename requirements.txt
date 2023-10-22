@@ -99,7 +99,6 @@ zipfile38
 telethon
 setuptools
 wheel
-aiohttp
 apscheduler
 cairosvg
 cinemagoer
@@ -155,7 +154,6 @@ vcsi
 wikipedia
 pymongo==3.11
 pymongo
-yt-dlp==2023.02.17
 
 git+https://github.com/Jisan09/search-engine-parser
 git+https://github.com/buddhhu/img2html.git
