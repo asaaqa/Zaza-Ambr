@@ -1,5 +1,7 @@
 from .. import *
 
+from ambro import BOT_USERNAME, CMD_HELP, bot
+from ambro.utils import edit_or_reply, edit_delete, joo_cmd
 
 @joo_cmd(pattern="اوامر")
 async def hi(event):
