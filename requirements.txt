@@ -157,4 +157,3 @@ pymongo
 
 git+https://github.com/Jisan09/search-engine-parser
 git+https://github.com/buddhhu/img2html.git
-git+https://github.com/sandy1709/py-googletrans
