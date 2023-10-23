@@ -3,7 +3,6 @@ import re
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest as unblock
 
-from ambro import ambox
 from ambro.helpers.functions import delete_conv
 
 from ambro.modules.sql_helper.globals import addgvar, gvarstatus
