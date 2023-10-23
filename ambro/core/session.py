@@ -2,7 +2,6 @@ import sys
 
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 
-from ..Config import Config
 from .bothseesion import bothseesion
 from .client import AmbUserBotClient
 from .logger import logging
