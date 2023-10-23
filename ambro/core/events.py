@@ -158,7 +158,6 @@ async def safe_check_text(msg):  # sourcery no-metrics
         )
     )
 
-"""
 async def send_message(
     client,
     entity: "hints.EntityLike",
@@ -289,7 +288,7 @@ async def send_message(
         schedule=schedule,
         comment_to=comment_to,
     )
-
+""" 
 
 async def send_file(
     client,
