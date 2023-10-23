@@ -10,7 +10,7 @@ DB_URI,
 HEROKU_API_KEY, 
 SUDO_USERS, 
 
-Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
+Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 
 # uniborg
