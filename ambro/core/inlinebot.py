@@ -10,7 +10,7 @@ from telethon import Button, types, version
 from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
-from ambro import ambox, ambversion, StartTime
+from ambro import ambversion, StartTime
 from ..helpers.functions import rand_key, ambalive, check_data_base_heal_th, get_readable_time
 from ..helpers.functions.utube import download_button, get_yt_video_id, get_ytthumb, result_formatter, ytsearch_data
 from ..modules import mention
@@ -44,7 +44,7 @@ def ibuild_keyboard(buttons):
             keyb.append([Button.url(btn[0], btn[1])])
     return keyb
 
-@ambox.tgbot.on(InlineQuery)
+@tgbot.on(InlineQuery)
 async def inline_handler(event):  # sourcery no-metrics
     builder = event.builder
     result = None
