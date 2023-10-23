@@ -6,7 +6,6 @@ import lyricsgenius
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest as unblock
 
-from ...Config import Config
 from ...core.managers import edit_or_reply
 from ..utils.utils import runcmd
 from .functions import delete_conv
