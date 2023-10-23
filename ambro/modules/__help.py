@@ -27,7 +27,7 @@ DEFAULTUSER = user.first_name
 CUSTOM_HELP_EMOJI = "ރ"
 
 
-@joo_cmd(pattern="مساعده (.*)")
+@joo_cmd(pattern="مساعده(.*)")
 async def cmd_list(event):
     args = event.pattern_match.group(1).lower()
     if args:
