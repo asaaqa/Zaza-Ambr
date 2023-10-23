@@ -23,7 +23,6 @@ from typing import Dict, Tuple
 
 from telethon.errors.rpcerrorlist import MessageNotModifiedError
 
-from ..Config import Config
 from ..core.logger import logging
 
 LOGS = logging.getLogger(__name__)
