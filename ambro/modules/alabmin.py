@@ -19,6 +19,7 @@ from telethon.tl.types import (
 )
 from telethon.utils import get_display_name
 
+from . import ambox
 
 from ..core.data import _sudousers_list
 from ..core.logger import logging
