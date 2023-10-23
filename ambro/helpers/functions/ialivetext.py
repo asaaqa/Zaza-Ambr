@@ -10,19 +10,7 @@ DB_URI,
 HEROKU_API_KEY, 
 SUDO_USERS, 
 
-
-
-# uniborg
-
-""" 
-def check_data_base_heal_th():
-    # https://stackoverflow.com/a/41961968
-    is_database_working = False
-    output = "No Database is set"
-    if not Config.DB_URI:
-        return is_database_working, output
-  """ 
-    from ambro.modules.sql_helper import SESSION
+from ambro.modules.sql_helper import SESSION
 
     try:
         # to check database we will execute raw query
