@@ -19,7 +19,7 @@ else:
 try:
     ambub = AmbUserBotClient(
         session=session,
-        api_id=Config.APP_ID,
+        api_id=Config.API_KEY,
         api_hash=Config.API_HASH,
         loop=loop,
         app_version=__version__,
@@ -36,7 +36,7 @@ except Exception as e:
 try:
     ambub.tgbot = tgbot = AmbUserBotClient(
         session="ambTgbot",
-        api_id=Config.APP_ID,
+        api_id=Config.API_KEY,
         api_hash=Config.API_HASH,
         loop=loop,
         app_version=__version__,
