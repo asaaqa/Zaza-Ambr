@@ -93,7 +93,7 @@ class NewMessage(events.NewMessage):
                 return
         return event
 
-
+"""
 @events.common.name_inner_event
 class MessageEdited(NewMessage):
     @classmethod
@@ -158,7 +158,7 @@ async def safe_check_text(msg):  # sourcery no-metrics
         )
     )
 
-
+"""
 async def send_message(
     client,
     entity: "hints.EntityLike",
@@ -212,6 +212,8 @@ async def send_message(
             schedule=schedule,
             comment_to=comment_to,
         )
+
+
     msg = message
     safecheck = await safe_check_text(msg)
     if safecheck:
