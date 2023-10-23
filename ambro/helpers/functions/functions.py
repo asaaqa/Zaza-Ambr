@@ -24,7 +24,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.contacts import UnblockRequest as unblock
 
 from ...core.logger import logging
-from Ambro.modules.sql_helper.globals import gvarstatus
+from ambro.modules.sql_helper.globals import gvarstatus
 from ..resources.states import states
 
 LOGS = logging.getLogger(__name__)
