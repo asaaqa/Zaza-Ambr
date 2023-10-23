@@ -2,7 +2,6 @@ import json
 
 import requests
 
-from ...Config import Config
 from ...core.logger import logging
 
 LOGS = logging.getLogger(" Zaza-Ambro")
