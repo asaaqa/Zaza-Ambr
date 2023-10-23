@@ -5,6 +5,10 @@ import heroku3
 import requests
 
 from .utils import get_readable_time
+from ambro import (
+DB_URI, 
+HEROKU_API_KEY, 
+SUDO_USERS, 
 
 Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
@@ -18,7 +22,7 @@ def check_data_base_heal_th():
     output = "No Database is set"
     if not Config.DB_URI:
         return is_database_working, output
-    from ...sql_helper import SESSION
+    from ambro.modules.sql_helper import SESSION
 
     try:
         # to check database we will execute raw query
