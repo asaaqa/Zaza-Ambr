@@ -1,6 +1,5 @@
 from typing import Dict, List, Union
 
-from ..Config import Config
 from ..helpers.utils.extdl import install_pip
 from . import CMD_INFO, GRP_INFO, PLG_INFO
 from .managers import edit_delete
