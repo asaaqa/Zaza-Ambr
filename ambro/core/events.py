@@ -8,9 +8,34 @@ from telethon.tl.types import (
     MessageMediaWebPage,
 )
 
-from ..Config import Config
 from .managers import edit_or_reply
-
+from ambro import (
+TG_2STEP_VERIFICATION_CODE, 
+IBM_WATSON_CRED_PASSWORD, 
+SCREEN_SHOT_LAYER_ACCESS_KEY, 
+DEEP_AI, 
+GITHUB_ACCESS_TOKEN, 
+SPOTIFY_CLIENT_SECRET, 
+SPOTIFY_CLIENT_ID, 
+SPAMWATCH_API, 
+LASTFM_PASSWORD_PLAIN, 
+LASTFM_SECRET, 
+LASTFM_API, 
+G_DRIVE_DATA, 
+G_DRIVE_CLIENT_SECRET, 
+G_DRIVE_CLIENT_ID, 
+CURRENCY_API, 
+REM_BG_API_KEY, 
+GENIUS_API_TOKEN, 
+OCR_SPACE_API_KEY, 
+IBM_WATSON_CRED_URL, 
+OPEN_WEATHER_MAP_APPID, 
+HEROKU_API_KEY, 
+BOT_TOKEN, 
+API_HASH, 
+STRING_SESSION, 
+tgbot,
+ bot,
 
 @events.common.name_inner_event
 class NewMessage(events.NewMessage):
