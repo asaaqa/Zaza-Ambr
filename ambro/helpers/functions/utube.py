@@ -9,7 +9,6 @@ from telethon import Button
 from youtubesearchpython import VideosSearch
 from yt_dlp.utils import DownloadError, ExtractorError, GeoRestrictedError
 
-from ...Config import Config
 from ...core import pool
 from ...core.logger import logging
 from ..aiohttp_helper import AioHttp
