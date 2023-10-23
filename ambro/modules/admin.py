@@ -83,8 +83,8 @@ UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 # ================================================
 
 
-@joo_cmd(pattern=" (|)$")
-@register(pattern=r"^\.csetgpic( -s| -d)$", sudo=True)
+@joo_cmd(pattern="الصوره(وضع|حذف)$")
+@register(pattern="الصوره(وضع|حذف)$", sudo=True)
 async def set_group_photo(event):
     "For changing Group dp"
     flag = (event.pattern_match.group(1)).strip()
